@@ -1,0 +1,81 @@
+body {
+    background-image: url('../img/background.jpg');
+    background-size: 100%;
+    margin: 0;
+    /*height: 100vh;*/
+}
+
+.valentine {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.valentine__image {
+    width: 500px;
+    height: 500px;
+}
+
+.valentine__image img {
+    width: 100%;
+    height: 100%;
+}
+
+.valentine__text {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    padding: 16px;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.valentine__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.button-yes, .button-no {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 38px;
+    padding: 16px;
+    color: white;
+    background: rgb(255 47 76);
+    border-radius: 16px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.valentine__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+    position: relative;
+}
+
+.agree-image {
+    display: none;
+}
+
+.button-yes.active {
+    /*position: absolute;*/
+    /* transform: translate(-68%, -10%); */
+    /*left: -165px;*/
+    /* top: 50%; */
+}
+
+.button-no.active {
+    position: absolute;
+    /* transform: translate(50%, -10%); */
+    left: 60%;
+    top: 0%;
+}
